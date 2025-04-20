@@ -1,0 +1,26 @@
+{% extends '_templates/base.njk' %}
+
+{% block page_title %}Restaurants{% endblock %}
+
+{% block page_description %}A list of Austin restaurants.{% endblock %}
+
+{% block content %}
+<article class="container">
+  <h1>Austin Restaurants</h1>
+  <p>Intro text here.</p>
+</article>
+
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+      {% for restaurant in resturants.restaurants %}
+    <div class="col">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"> {{ restaurant.name }} </h5>
+          <p class="card-text"> {{ restaurant.address }} </p>
+        </div>
+      </div>
+    </div>
+      {% endfor %}
+  </div>
+{% endblock %}

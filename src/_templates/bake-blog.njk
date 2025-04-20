@@ -1,0 +1,36 @@
+{% extends '_templates/base.njk' %}
+{% set relative_path = "../" %}
+{% from '_macros/prose.njk' import prose %}
+
+{% block page_title %}{{ headline }}{% endblock %}
+
+{% block page_description %}{{ headline }} by Abby Breyfogle{% endblock %}
+
+{% block content %}
+  <article class="container">
+    <div class="row">
+      <div class="col-sm-4">
+         <img src="../img/landmarks/{{ image }}" class="img-fluid">
+        <hr>
+        <h5> Location: </h5>
+          <p class="location">{{ location }} </p>
+        <hr>
+        <h5> Date Established: </h5>
+          <p class="established">{{ established }}</p>
+        <hr>
+        <h5> Want to Learn More? </h5>
+        <a href= "{{ url }}"> Click Here! </a>
+        <hr>
+        <hr class="d-sm-none">
+      </div>
+      <div class="col-sm-8">
+        <h1>{{ name }}</h1>
+        <hr>
+        <h3> Activities: </h3>
+         <p> {{ activities }} </p>
+        <h3> Description: </h3>
+          {{ description | safe }}
+      </div>
+    </div>
+  </article>
+{% endblock %}

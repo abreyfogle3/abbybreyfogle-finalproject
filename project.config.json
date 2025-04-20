@@ -14,6 +14,11 @@
       "fileId": "120JjL_DPwON7enM4WT0v2qWpIOQa_7CQw2Bnt85kjFA",
       "type": "sheet",
       "name": "citydata"
+    },
+    {
+      "fileId": "1iK3rqm9zr5WrLe2AFQuDpc9miICrVf8hBk2C5OWvGWg",
+      "type": "doc",
+      "name": "resturants"
     }
   ],
   "to_bake": [
@@ -23,6 +28,14 @@
       "array": "books",
       "slug": "slug",
       "path": "books"
+    },
+
+    {
+      "template": "bake-blog",
+      "data": "citydata",
+      "array": "landmarks",
+      "slug": "slug",
+      "path": "citydata"
     }
   ]
 }
