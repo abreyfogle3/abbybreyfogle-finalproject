@@ -6,18 +6,22 @@
 
 <div class="container">
     <div class="row justify-content-center row-cols-lg-2 row-cols-1 row-cols-md-1">
-    <div class="col">
+    <div class="col text-center">
         <h1>Austin Tourism Recommendation</h1>
-        <p>Hempen halter mizzenmast deadlights gaff pillage starboard jack lee Blimey draught. Man-of-war piracy black jack sutler Yellow Jack keel provost overhaul execution dock rigging. Log quarterdeck dead men tell no tales red ensign gibbet grog blossom bilge Nelsons folly code of conduct gunwalls.</p>  
-
-      <hr>
-        {% for citydata in citydata.landmarks %}
-          <h3> <a href= " citydata/{{ citydata.slug }}.html " target="_blank"> {{ citydata.name }} </a> </h3>
-          <p> {{ citydata.established }} </p>
-          {% endfor %}
-      <hr>
+        <p>Check out all of the sites that Austin has to offer! Spend the day touring the 40 acres or paddleboard at sunset around Lady Bird Lake (and keep an eye out for the bats). Austin has so much to offer so enjoy all the sights in the Live Music Capitol of the World! </p>  
+  
+        <hr>
+      {% for citydata in citydata.landmarks %}
+         <img src="img/landmarks/{{ citydata.image }}" class="img-fluid" style="max-width: 25rem;">
+            <h3> <a href= " citydata/{{ citydata.slug }}.html " target="_blank"> {{ citydata.name }} </a> </h3>
+            <p> {{ citydata.established }} </p>
+          <hr>
+       {% endfor %}
     </div>
   </div>
 </div>
 
 {% endblock %}
+
+
+ 

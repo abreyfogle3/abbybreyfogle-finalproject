@@ -10,17 +10,10 @@
          <a class="nav-link" href="{{ relative_path }}restaurants.html">Restaurants</a>
         </li>
         <li class="nav-item">
-         <a class="nav-link" href="{{ relative_path }}index-example.html">Other</a>
-      </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Library books
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            {% for book in library.books %}
-            <li><a class="dropdown-item" href="{{ relative_path }}books/{{ book.slug}}.html">{{ book.title }}</a></li>
-            {% endfor %}
-          </ul>
+         <a class="nav-link" href="{{ relative_path }}activities.html">Activities</a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="{{ relative_path }}mural.html">Murals</a>
         </li>
       </ul>
     </div>

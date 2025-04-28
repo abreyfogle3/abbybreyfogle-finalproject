@@ -71,6 +71,24 @@
       "address": "2400 E Oltorf St #1A, Austin, TX 78741",
       "category": "Pan-Asian",
       "image": "888.jpg"
+    },
+    {
+      "name": "Lil’ Easy",
+      "address": "5000 E. Cesar Chavez St, Austin, TX 78702",
+      "category": "Cajun",
+      "image": "lileasy.jpeg"
+    },
+    {
+      "name": "Justine’s",
+      "address": "4710 E 5th St, Austin, TX 78702",
+      "category": "French",
+      "image": "justines.jpeg"
+    },
+    {
+      "name": "Sandy’s",
+      "address": "603 Barton Springs Rd, Austin, TX 78704",
+      "category": "American",
+      "image": "sandys.jpeg"
     }
   ]
 }

@@ -1,0 +1,36 @@
+{% extends '_templates/base.njk' %}
+
+{% block page_title %}Activities{% endblock %}
+
+{% block content %}
+
+<div class="container">
+     <div class="row justify-content-center row-cols-lg-2 row-cols-1 row-cols-md-1">
+        <div class="col text-center">
+         <h1>What to Do:</h1>
+            <p> Check out some of these fun activities!</p>  
+
+    </div>
+    </div>
+<table id="example" class="table table-striped table-hover" style="width:100%">
+        <thead>
+            <tr>
+                <th scope="col">Activity</th>
+                <th scope="col">Opening</th>
+                <th scope="col">Address</th>
+            </tr>
+        </thead>
+        <tbody>
+          {% for citydata in citydata.activities %}
+            <tr>
+                
+                <td><a href="{{ citydata.url }}" target="_blank"> {{citydata.activity}}</a> </td>
+                <td> {{ citydata.date_time}} </td>
+                <td> {{ citydata.address }} </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+      </table>
+</div>
+
+{% endblock %}
